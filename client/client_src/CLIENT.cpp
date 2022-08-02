@@ -4,7 +4,7 @@
 
 #include <CLIENT.h>
 
-void main(){
+int main(){
     long SUCCESSFUL;
     WSAData WinSockData;
     WORD DLLVERSION;
@@ -54,5 +54,5 @@ void main(){
 
     std::cout << "\n\n\t";
     system("PAUSE");
-    exit(1);
+    return 0;
 }

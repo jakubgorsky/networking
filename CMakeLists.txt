@@ -8,7 +8,7 @@ set(HEADER_FILES
         client/client_headers/CLIENT.h)
 
 set(SOURCE_FILES
-        main.cpp client/client_src/CLIENT.cpp)
+        client/client_src/CLIENT.cpp)
 
 link_libraries(ws2_32 wsock32)
 
