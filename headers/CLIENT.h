@@ -2,8 +2,8 @@
 // Created by Jakub Górski on 02/08/2022.
 //
 
-#ifndef NETWORKING_SERVER_H
-#define NETWORKING_SERVER_H
+#ifndef NETWORKING_CLIENT_H
+#define NETWORKING_CLIENT_H
 
 #pragma comment(lib, "Ws_32.lib")
 
