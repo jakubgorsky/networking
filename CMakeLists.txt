@@ -9,10 +9,19 @@ set(SERVER_HEADER_FILES
 
 set(SERVER_SOURCE_FILES
         server/server_src/SERVER.cpp)
+        
+set(CLIENT_HEADER_FILES
+        client/client_headers/CLIENT.h)
+
+set(CLIENT_SOURCE_FILES
+        client/client_src/CLIENT.cpp)
+
+include_directories(client/client_headers)
+include_directories(client/client_src)
 
 link_libraries(ws2_32 wsock32)
 
 include_directories(server/server_headers)
 include_directories(server/server_src)
 
-add_executable(Networking ${SERVER_HEADER_FILES} ${SERVER_SOURCE_FILES})
+add_executable(Networking ${SERVER_HEADER_FILES} ${SERVER_SOURCE_FILES} ${CLIENT_HEADER_FILES} ${CLIENT_SOURCE_FILES})
