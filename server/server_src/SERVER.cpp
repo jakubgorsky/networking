@@ -4,7 +4,7 @@
 
 #include <SERVER.h>
 
-void main(){
+int main(){
     long SUCCESSFUL;
     WSAData WinSockData;
     WORD DLLVERSION;
@@ -44,4 +44,6 @@ void main(){
             SUCCESSFUL = send(sock_CONNECTION, "You have been successfully connected to the server.", 46, 0);
         }
     }
+
+    return 0;
 }
