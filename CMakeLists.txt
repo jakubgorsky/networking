@@ -1,4 +1,16 @@
 cmake_minimum_required(VERSION 3.20)
-project(SimpleS_C_App)
+project(Networking_server)
 
 set(CMAKE_CXX_STANDARD 14)
+
+set(HEADER_FILES
+        headers/SERVER.h)
+
+set(SOURCE_FILES
+        main.cpp src/SERVER.cpp)
+
+
+include_directories(${PROJECT_SOURCE_DIR}/headers)
+include_directories(${PROJECT_SOURCE_DIR}/src)
+
+add_executable(Networking ${SOURCE_FILES} ${HEADER_FILES})
