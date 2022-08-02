@@ -1,2 +1,1 @@
-# wms_demo
-WMS Demo Implementation
+# Simple socket chat app

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(Networking_server)
+project(Networking)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${GCC_COVERAGE_LINK_FLAGS} -static")
@@ -9,7 +9,10 @@ set(SERVER_HEADER_FILES
 
 set(SERVER_SOURCE_FILES
         server/server_src/SERVER.cpp)
-        
+
+include_directories(server/server_headers)
+include_directories(server/server_src)
+
 set(CLIENT_HEADER_FILES
         client/client_headers/CLIENT.h)
 
@@ -21,7 +24,6 @@ include_directories(client/client_src)
 
 link_libraries(ws2_32 wsock32)
 
-include_directories(server/server_headers)
-include_directories(server/server_src)
 
-add_executable(Networking ${SERVER_HEADER_FILES} ${SERVER_SOURCE_FILES} ${CLIENT_HEADER_FILES} ${CLIENT_SOURCE_FILES})
+add_executable(Server ${SERVER_HEADER_FILES} ${SERVER_SOURCE_FILES})
+add_executable(Client ${CLIENT_HEADER_FILES} ${CLIENT_SOURCE_FILES})

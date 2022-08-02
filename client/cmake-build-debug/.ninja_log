@@ -1,0 +1,7 @@
+# ninja log v5
+0	331	6811439943599326	CMakeFiles/Networking.dir/main.cpp.obj	47cf945894d6b9b8
+1315	1649	6811442495880546	Networking.exe	f9677a961b909068
+4	1318	6811438531458320	CMakeFiles/Networking.dir/src/SERVER.cpp.obj	8d406e1384e2519a
+4	1412	6811436470859558	CMakeFiles/Networking.dir/src/CLIENT.cpp.obj	86cc2d5f68fb772a
+3	1387	6811440075788265	CMakeFiles/Networking.dir/client/client_src/CLIENT.cpp.obj	6a4191897eb0ca6f
+0	1312	6811442492560549	CMakeFiles/Networking.dir/server/server_src/SERVER.cpp.obj	862059ac6bae9d7b
